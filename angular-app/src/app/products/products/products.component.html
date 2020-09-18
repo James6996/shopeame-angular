@@ -1,0 +1,26 @@
+<div class="product">
+    <h2 class="product__title">
+        Listado de productos({{ listProducts.length }})
+
+
+      </h2>
+      <h4>Buscar:
+        <input type="text" [(ngModel)]="searchProduct" placeholder="Escribe aqui" />
+
+
+      </h4>
+
+
+      
+      <div class="product__item" *ngFor="let producto of listProducts | buscador:searchProduct" >
+        <img class="product__img" src="{{ producto.image }}" alt="" />
+        <p class="product__text">{{ producto.description }}</p>
+        <p class="product__price">Precio: {{ producto.price }} Euros.</p>
+        <span class="product__stars">{{ producto.stars }}
+            <img class="product__stars__image" src="/assets/star.png" alt="">
+        </span>
+      </div>
+
+</div>
+  
+  

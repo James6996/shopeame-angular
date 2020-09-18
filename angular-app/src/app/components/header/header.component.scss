@@ -1,0 +1,33 @@
+.encabezado{
+    display: block;
+    margin: 0;
+    &__title {
+        display: block;
+        height: 100px;
+        text-align: center;
+      }
+      &__rutas {
+        width: 100%;
+        height: 72px;
+        background: #ffc970;
+        text-align: center;
+        
+        
+      }
+    
+}
+.enlace{
+    color: #444444;
+    text-decoration: none;
+    padding: 12px;
+    display: inline-block;
+    max-width: 100px;
+    &__active{
+      color:black;
+      font-weight: 500;
+      
+    }
+    
+    
+    
+}
